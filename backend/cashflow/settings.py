@@ -120,28 +120,28 @@ WSGI_APPLICATION = 'cashflow.wsgi.application'
 # }"""
 
 # # Official
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER' : 'postgres.cucxcdakmhqmirsalodf',
-        'PASSWORD' : 'qQUvqDf0QgE67w2Z',
-        'HOST' : 'aws-0-ap-southeast-1.pooler.supabase.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER' : 'postgres.cucxcdakmhqmirsalodf',
+#         'PASSWORD' : 'qQUvqDf0QgE67w2Z',
+#         'HOST' : 'aws-0-ap-southeast-1.pooler.supabase.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # for testing
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'postgres',
-#        'USER' : 'postgres.orpzogptkpvfusobmcpc',
-#        'PASSWORD' : 'CGKcG54DAgTGNMj1',
-#        'HOST' : 'aws-0-ap-southeast-1.pooler.supabase.com',
-#        'PORT': '6543',
-#    }
-#}
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'postgres',
+       'USER' : 'postgres.orpzogptkpvfusobmcpc',
+       'PASSWORD' : '5LO2zb9agBKMQi2u',
+       'HOST' : 'aws-0-ap-southeast-1.pooler.supabase.com',
+       'PORT': '5432',
+   }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -193,8 +193,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     # "http://localhost:8000",
     # "http://localhost:3000",
-    "https://orbital-beef.vercel.app",
-    "https://orbital-beef-6446.vercel.app"
+    "https://orbital-beef-m3.vercel.app",
+    "https://orbital-beef-6446-m3.vercel.app"
 ]
 
 CORS_ALLOW_HEADERS = [
@@ -222,7 +222,7 @@ CORS_ALLOW_METHODS = [
 CORS_ALLOW_CREDENTIALS = True
 
 # FRONTEND_BASE_URL = 'http://localhost:3000'
-FRONTEND_BASE_URL = "https://orbital-beef-6446.vercel.app"
+FRONTEND_BASE_URL = "https://orbital-beef-6446-m3.vercel.app"
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
